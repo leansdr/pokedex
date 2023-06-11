@@ -100,9 +100,7 @@
 }
 
 #btn-close {
-  color: #fff;
   padding: 8px;
-  border: 2px solid #000;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -117,19 +115,23 @@
   right: 180px;
 }
 
+#btn-close img {
+  width: 100px;
+  height: 100px;
+}
+
 body {
   background-color: var(--bg-body);
   overflow-x: hidden;
 }
 
 #header {
-  height: 60px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   color: var(--white-color);
   width: 100%;
-  margin: 30px 0;
 }
 
 nav {
@@ -162,13 +164,6 @@ nav {
 .selected-tipo a {
   text-decoration: none;
   color: var(--white-color);
-}
-
-h3 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 25px;
-  font-weight: bold;
 }
 
 #container {
@@ -267,8 +262,11 @@ h3 {
 }
 
 section {
-  position: absolute;
+  position: fixed;
+  top: 100px;
+  bottom: 0;
   width: 100vw;
+  z-index: 999;
 }
 
 .gif {
@@ -279,7 +277,6 @@ section {
   height: calc(100vh - 60px);
   position: absolute;
   background-color: var(--bg-body);
-  z-index: 999;
 }
 
 .gif img {
