@@ -2,7 +2,7 @@
 const containerPokemon = document.querySelector("#container");
 const listTypePokemon = document.createElement("ul");
 const sectionGift = document.querySelector(".section-gift");
-const quantidade_pokemons = 300;
+const quantidade_pokemons = 649;
 
 console.log(sectionGift);
 
@@ -87,7 +87,7 @@ const removeGift = () => {
   sectionGift.classList.add("hide");
 };
 
-setTimeout(removeGift, 3000);
+setTimeout(removeGift, 8000);
 
 function mostrar() {
   const overlay = document.querySelector("#overlay");
@@ -98,5 +98,8 @@ const btnCloseOverlay = document.querySelector("#btn-close");
 btnCloseOverlay.addEventListener("click", () => {
   overlay.classList.toggle("hide");
 });
+
+const selectedTipo = document.querySelector(".selected-tipo");
+console.log(selectedTipo);
 
 document.addEventListener("load", pegarPokemon(), pegarTiposPokemons());

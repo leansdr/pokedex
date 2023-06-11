@@ -559,18 +559,6 @@ section {
   border: 2px solid #410b9e;
 }
 
-.selected-fighting:hover {
-  border: 2px solid #d04164;
-  background-color: transparent;
-  color: #d04164;
-}
-
-.selected-grass:hover {
-  /* border: 2px solid #62b957;*/
-  background-color: transparent;
-  color: #62b957;
-}
-
 @media (min-width: 320px) and (max-width: 425px) {
   body {
     margin: 0 auto;
