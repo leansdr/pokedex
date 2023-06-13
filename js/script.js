@@ -2,7 +2,7 @@
 const containerPokemon = document.querySelector("#container");
 const listTypePokemon = document.createElement("ul");
 const sectionGift = document.querySelector(".section-gift");
-const quantidade_pokemons = 649;
+const quantidade_pokemons = 300;
 
 console.log(sectionGift);
 
